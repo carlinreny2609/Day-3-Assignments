@@ -1,0 +1,28 @@
+package selenium;
+
+import java.util.Scanner;
+
+public class Greatest_of_3_numbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner Scan = new Scanner(System.in);
+		System.out.print("Please enter the value of A:");
+		int a = Scan.nextInt();
+		System.out.print("Please enter the value of B:");
+		int b = Scan.nextInt();
+		System.out.print("Please enter the value of C:");
+		int c = Scan.nextInt();
+
+		if (a > b) {
+			System.out.print("A is the greatest number");
+		} else if (b > c) {
+			System.out.print("B is the greatest number");
+		} else if (c > a) {
+			System.out.print("C is the Greatest Number");
+		}
+
+	}
+
+}
