@@ -1,0 +1,68 @@
+package selenium;
+
+import java.util.Scanner;
+
+public class Calculatorusingswitch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.print("Please enter the operation you want to perform :");
+
+		String Operation = scan.next();
+		
+		System.out.print("Please enter the Value of First number :");
+		
+		int First_Number = scan.nextInt();
+        
+		System.out.print("Please enter the Value of Second number :");
+		
+		int Second_Number = scan.nextInt();		
+		
+		scan.close();
+
+		int add = First_Number + Second_Number;
+		int subtract = First_Number - Second_Number;
+		int multiply = First_Number * Second_Number;
+		int divide = First_Number / Second_Number;
+		int modulus = First_Number % Second_Number;
+
+		switch (Operation) {
+
+		case "add","addition":
+
+			System.out.print("The Addition value is :" + add);
+
+			break;
+
+		case "subtract","subtraction":
+
+			System.out.print("The Subtraction value is :" + subtract);
+
+			break;
+
+		case "multiply","multiplication":
+
+			System.out.print("The Multiplication value is :" + multiply);
+
+			break;
+
+		case "divide","division":
+
+			System.out.print("The Division value is :" + divide);
+
+			break;
+
+		case "modulus","mod":
+
+			System.out.print("The Modulus value is :" + modulus);
+
+			break;
+
+		}
+
+	}
+
+}
